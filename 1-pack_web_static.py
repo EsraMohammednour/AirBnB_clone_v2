@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """Fabric script that generates a .tgz"""
 from fabric.api import local
-import datatime
+import datetime
 import os.path
 
 
 def do_pack():
     """Archive from the contents of the web_static"""
-    d = datatime.datatime.now()
+    d = datetime.datetime.now()
     esra = "versions/web_static_{}{}{}{}{}{}.tgz".format(d.year,
                                                          d.month,
                                                          d.day,
