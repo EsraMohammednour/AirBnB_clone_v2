@@ -9,11 +9,11 @@ def do_pack():
     """Archive from the contents of the web_static"""
     d = datatime.datatime.now()
     esra = "versions/web_static_{}{}{}{}{}{}.tgz".format(d.year,
-                                                            d.month,
-                                                            d.day,
-                                                            d.hour,
-                                                            d.minut,
-                                                            d.second)
+                                                         d.month,
+                                                         d.day,
+                                                         d.hour,
+                                                         d.minute,
+                                                         d.second)
     if os.path.isdir("versions") is False:
         if local("mkdir -p versions").failed is True:
             return None
