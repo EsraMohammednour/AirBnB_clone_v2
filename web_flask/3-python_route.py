@@ -18,7 +18,7 @@ def C_is_fun(text):
 
 
 @app.route('/python/', defaults={'text': 'is_cool'})
-@app.route('/python/<text>')
+@app.route('/python/<text>', strict_slashes=False)
 def python_is_fun(text):
     ''' Return the massege'''
     text2 = text.replace('_', ' ')
