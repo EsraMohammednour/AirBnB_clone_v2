@@ -19,10 +19,10 @@ def C_is_fun(text):
 
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def python_is_fun(text="is cool"):
+def python(text="is cool"):
     """Return the massege"""
     text = text.replace('_', ' ')
-    return f"python {text}"
+    return f"Python {text}"
 
 
 @app.route('/hbnb', strict_slashes=False)
