@@ -36,6 +36,7 @@ def HBNB():
     ''' Return wellome massege'''
     return "HBNB"
 
+
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
     '''return html file'''
