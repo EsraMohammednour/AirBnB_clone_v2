@@ -9,10 +9,11 @@ def Hello_HBNB():
     ''' Return wellome massege'''
     return "Hello HBNB!"
 
+
 @app.route('/c/<text>', strict_slashes=False)
 def C_is_fun(text):
     ''' Return the massege'''
-    no_underscore =  text.replace('_', ' ')
+    no_underscore = text.replace('_', ' ')
     return f"C {no_underscore}"
 
 
