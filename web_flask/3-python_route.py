@@ -17,7 +17,7 @@ def C_is_fun(text):
     return f"C {no_underscore}"
 
 
-@app.route('/python', defaults={'text': 'is cool'})
+@app.route('/python', defaults={'text': 'is cool'}, strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def python_is_fun(text):
     ''' Return the massege'''
