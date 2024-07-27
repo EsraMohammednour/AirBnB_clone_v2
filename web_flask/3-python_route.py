@@ -20,7 +20,7 @@ def C_is_fun(text):
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def python_is_fun(text="is cool"):
-    ''' Return the massege'''
+    """Return the massege"""
     text = text.replace('_', ' ')
     return f"python {text}"
 
@@ -32,4 +32,4 @@ def HBNB():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0')
