@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''list of states'''
-from models import storge
+from models import storage
 from flask import Flask, render_template
 app = Flask(__name__)
 
