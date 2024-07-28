@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''list of states'''
 from models import storage
+from models.state import State
 from flask import Flask, render_template
 app = Flask(__name__)
 
@@ -8,7 +9,7 @@ app = Flask(__name__)
 @app.route('/states_list', strict_slashes=False)
 def states_list():
     '''Displays an html page with list of all stste object'''
-    states = storage.all("state")
+    states = storage.all(State)
     return render_template("7-states_list.html", states=states)
 
 
